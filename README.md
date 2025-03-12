@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Menambahkan perubahan di github
+- git add .
+- git commit -m 'comment bebas'
+- git push origin nama-branch
+
+## Membuat branch baru di github
+- git checkout -b nama-branch
+- git add .
+- git commit -m 'comment bebas'
+- git push origin nama-branch
+
 ## Available Scripts
 
 In the project directory, you can run:
