@@ -1,12 +1,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f7fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+
 }
+
 .container {
   width: 100%;
   max-width: 400px;
@@ -16,6 +13,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
+label {
+  font-size: 14px;
+}
+
 .login-box h2 {
   margin-bottom: 20px;
   color: #333;
@@ -32,7 +34,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.login-box button {
+.login-button {
   width: 100%;
   padding: 10px;
   background-color: #0056b3;
@@ -40,10 +42,34 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 .forgot-password a {
   display: block;
   margin-top: 10px;
   text-decoration: none;
   color: #0056b3;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0px 35px;
+  }
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  bottom: -50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
 }

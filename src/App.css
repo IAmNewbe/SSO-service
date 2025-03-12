@@ -1,11 +1,12 @@
 .App {
   text-align: center;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 600px) {
+ margin: 0px 10px;
 }
